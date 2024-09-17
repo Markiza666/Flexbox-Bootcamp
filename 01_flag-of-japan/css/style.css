@@ -1,27 +1,87 @@
+*,html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 :root {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-body {
-    background: #EEE;
-    height: 100vh;
-    margin: 0;
-    display: flex;
-}
-
-main {
-    background: white;
-    width: 800px;
-    height: 520px;
-    display: flex;
+.container {
+    /* background: #5f33e3; */
+    /* height: 100vh;
+    margin: 0; */
+    max-width: 1200px;
     margin: auto;
-    box-shadow: 0 0 3rem rgba(0,0,0,.1);
-}
-
-aside {
-    width: 18rem;
-    height: 18rem;
-    background: rgb(190, 24, 24);
-    border-radius: 999rem;
-    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    header {
+        flex:  0 0 100%;
+        min-height: 100px;
+        /* background-color: bisque; */
+        margin: 2% 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: rgb(151, 169, 151);
+        .logo {
+            flex: 0 0 25%;
+            padding: 20px 0;
+            min-height: 60px;
+            .flag {
+                background: rgb(255, 255, 255);
+                width: 84px;
+                height: 60px;
+                display: flex;
+                margin: 0 1rem;
+                box-shadow: 0 0 7rem rgba(1, 50, 24, 0.1);
+            }
+            .symb {
+                width: 2rem;
+                height: 2rem;
+                background: rgb(190, 24, 24);
+                border-radius: 999rem;
+                margin: auto;
+            }
+        }
+        nav {
+            flex: 0 0 60%;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            a {
+                flex: 0 0 20%;
+                text-align: center;
+                text-decoration: none;
+                color: black;
+                padding: 20px 0;
+                font: bold 1rem/1rem overpass;  /*--Vikt Size/line-height font-family--*/
+            }
+        }
+        button {
+            flex: 0 0 10%;
+            border: 2px solid #023c14;
+            border-radius: 3px;
+            height: 48px;
+            background-color: transparent;
+        }
+    }
+    main {
+        flex: 0 0 73%;
+        min-height: 466px;
+        /* background-color: aqua; */
+    }
+    aside{
+        flex: 0 0 25%;
+        min-height: 466px;
+        /* background-color: aquamarine; */
+    }
+    section {
+        flex: 0 0 100%;
+        min-height: 300px;
+        margin-top: 2%;
+        /* background-color: darkorange; */
+    }
 }
