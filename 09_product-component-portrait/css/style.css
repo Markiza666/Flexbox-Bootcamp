@@ -1,4 +1,72 @@
-:root {
+*,html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(212, 212, 212);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    .product {
+        background-color: #fff;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 2rem;
+        figure {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 0%;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(255, 208, 0);
+            img {
+                width: 80%;
+                margin: 4rem 0;
+            }
+            figcaption {
+                font-size: 16px;
+                color: rgba(255, 255, 255, 0.4);
+                margin: auto .5rem .5rem auto;
+            }
+        }
+        section {
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            padding: 40px;
+            h1 {
+                font-size: 32px;
+                margin: 0;
+            }
+            h2 {
+                margin: .25rem 0;
+                font-size: 24px;
+                font-weight: 500;
+            }
+            p {
+                font-size: 20px;
+                line-height: 1.4;
+                color: rgba(0,0,0,.7);
+                display: block;
+                margin: 20px 0;
+            }
+            .price {
+                margin: 2rem 0 0 auto;
+                font-size: 40px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+
+/* :root {
     font-size: 20px;
 }
 
@@ -88,4 +156,4 @@ button:hover {
     background: black;
     color: white;
     cursor: pointer;
-}
+} */

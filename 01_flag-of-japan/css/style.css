@@ -1,4 +1,33 @@
-*,html{
+:root {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background: #EEE;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+}
+
+main {
+    background: white;
+    width: 800px;
+    height: 520px;
+    display: flex;
+    margin: auto;
+    box-shadow: 0 0 3rem rgba(0,0,0,.1);
+}
+
+aside {
+    width: 18rem;
+    height: 18rem;
+    background: rgb(190, 24, 24);
+    border-radius: 999rem;
+    margin: auto;
+}
+
+
+/* *,html{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -9,9 +38,6 @@
 }
 
 .container {
-    /* background: #5f33e3; */
-    /* height: 100vh;
-    margin: 0; */
     max-width: 1200px;
     margin: auto;
     display: flex;
@@ -20,7 +46,6 @@
     header {
         flex:  0 0 100%;
         min-height: 100px;
-        /* background-color: bisque; */
         margin: 2% 0;
         display: flex;
         align-items: center;
@@ -57,7 +82,7 @@
                 text-decoration: none;
                 color: black;
                 padding: 20px 0;
-                font: bold 1rem/1rem overpass;  /*--Vikt Size/line-height font-family--*/
+                font: bold 1rem/1rem overpass;  Vikt Size/line-height font-family
             }
         }
         button {
@@ -71,17 +96,14 @@
     main {
         flex: 0 0 73%;
         min-height: 466px;
-        /* background-color: aqua; */
     }
     aside{
         flex: 0 0 25%;
         min-height: 466px;
-        /* background-color: aquamarine; */
     }
     section {
         flex: 0 0 100%;
         min-height: 300px;
         margin-top: 2%;
-        /* background-color: darkorange; */
     }
-}
+} */

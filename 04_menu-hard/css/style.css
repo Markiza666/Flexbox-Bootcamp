@@ -1,4 +1,4 @@
-:root {
+/* :root {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -37,4 +37,84 @@ nav a.login {
 nav a.login:hover {
     color: #222;
     border: 1px solid #222;
+}
+*,html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    header {
+        flex:  0 0 100%;
+        min-height: 100px;
+        margin: 2% 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: rgb(151, 169, 151);
+        .logo {
+            flex: 0 0 25%;
+            padding: 20px 0;
+            min-height: 60px;
+            .flag {
+                background: rgb(255, 255, 255);
+                width: 84px;
+                height: 60px;
+                display: flex;
+                margin: 0 1rem;
+                box-shadow: 0 0 7rem rgba(1, 50, 24, 0.1);
+            }
+            .symb {
+                width: 2rem;
+                height: 2rem;
+                background: rgb(190, 24, 24);
+                border-radius: 999rem;
+                margin: auto;
+            }
+        }
+        nav {
+            flex: 0 0 60%;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            a {
+                flex: 0 0 20%;
+                text-align: center;
+                text-decoration: none;
+                color: black;
+                padding: 20px 0;
+                font: bold 1rem/1rem overpass; 
+            }
+        }
+        button {
+            flex: 0 0 10%;
+            border: 2px solid #023c14;
+            border-radius: 3px;
+            height: 48px;
+            background-color: transparent;
+        }
+    }
+    main {
+        flex: 0 0 73%;
+        min-height: 466px;
+    }
+    aside{
+        flex: 0 0 25%;
+        min-height: 466px;
+    }
+    section {
+        flex: 0 0 100%;
+        min-height: 300px;
+        margin-top: 2%;
+    }
 }
